@@ -4,31 +4,26 @@
 /*
 Count number of times a depth measurement increases
 from the previous measurement
-1. Read data from the file
-2. store previous reading into variable;
-3. read next reading
-4. compare next with variable value
-5. if larger, increment counter, store value in variable
-6. if not larger, no increment, no storage
-
+Day 1 Challenge 2021
+Written 12-03-2021
+Author: Brandyn Pereira
 */
 using namespace std;
 int main() {
 	int counter = 0;
-	int previous_val = 0;
 	string next_val;
-	string holder;
+	string prev_val;
 	ifstream readings;
 	readings.open("input.txt");
 	if (readings.is_open()) {
-		getline(readings, holder);
+		getline(readings, prev_val);
 		while (getline(readings, next_val)) {
-			if (atoi(next_val.c_str()) > atoi(holder.c_str())) {
+			if (atoi(next_val.c_str()) > atoi(prev_val.c_str())) {
 				counter++;
-				holder = next_val;
+				prev_val = next_val;
 			}
-			if (atoi(next_val.c_str()) < atoi(holder.c_str())) {
-				holder = next_val;
+			if (atoi(next_val.c_str()) < atoi(prev_val.c_str())) {
+				prev_val = next_val;
 			}
 	
 			
@@ -36,7 +31,7 @@ int main() {
 		}
 		readings.close();
 	}
-	cout << "The Highest Value is: " << holder << endl;
+	cout << "The Highest Value is: " << prev_val << endl;
 	cout << "The count is: " << counter << endl;
 
 
