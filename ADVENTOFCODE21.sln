@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SonarSweep", "SonarSweep\So
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dive_Day02", "Dive_Day02\Dive_Day02.vcxproj", "{D0DE3D83-3AB3-47DC-BE54-D7263AD2BE17}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BinaryDiagnostic", "BinaryDiagnostic\BinaryDiagnostic.vcxproj", "{C6950ECF-EF28-4B7B-B09A-4FFDB3602497}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{D0DE3D83-3AB3-47DC-BE54-D7263AD2BE17}.Release|x64.Build.0 = Release|x64
 		{D0DE3D83-3AB3-47DC-BE54-D7263AD2BE17}.Release|x86.ActiveCfg = Release|Win32
 		{D0DE3D83-3AB3-47DC-BE54-D7263AD2BE17}.Release|x86.Build.0 = Release|Win32
+		{C6950ECF-EF28-4B7B-B09A-4FFDB3602497}.Debug|x64.ActiveCfg = Debug|x64
+		{C6950ECF-EF28-4B7B-B09A-4FFDB3602497}.Debug|x64.Build.0 = Debug|x64
+		{C6950ECF-EF28-4B7B-B09A-4FFDB3602497}.Debug|x86.ActiveCfg = Debug|Win32
+		{C6950ECF-EF28-4B7B-B09A-4FFDB3602497}.Debug|x86.Build.0 = Debug|Win32
+		{C6950ECF-EF28-4B7B-B09A-4FFDB3602497}.Release|x64.ActiveCfg = Release|x64
+		{C6950ECF-EF28-4B7B-B09A-4FFDB3602497}.Release|x64.Build.0 = Release|x64
+		{C6950ECF-EF28-4B7B-B09A-4FFDB3602497}.Release|x86.ActiveCfg = Release|Win32
+		{C6950ECF-EF28-4B7B-B09A-4FFDB3602497}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
